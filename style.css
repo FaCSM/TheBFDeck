@@ -1,0 +1,123 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url("background.png ");
+}
+header{
+    background: none;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.button-support{
+    border:0;
+    background: none;
+    transition-duration: 0.3s;
+}
+.link-support{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+}
+.button-support:hover{
+    border-bottom: white     2px solid;
+}
+.nav-bar{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.github-button{
+    border:0;
+    background: none;
+    transition-duration: 0.3s;
+}
+.link-github{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+}
+.github-button:hover{
+    border-bottom: white 2px solid;
+}
+.logo-picture{
+    height: 50px;
+    width: 50px;
+}
+.button-downloads{
+    border:0;
+    background: none;
+    transition-duration: 0.3s;
+}
+.link-downloads{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+
+}
+.button-downloads:hover{
+    border-bottom: white 2px solid;
+}
+.buy{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    color: white;
+    line-height: 60px;
+}
+.buy-text{
+    font-size: 48px;
+    width: 600px;
+}
+.button-buy{
+    background: #6b686d;
+    border: none;
+    font-size: 48px;
+    color: white;
+    margin-top: 10px;
+}
+.link-buy{
+    text-decoration: none;
+    color: white;
+}
+.buy-picture{
+    width: 750px;
+    height: 375px;
+}
+.self-made{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    line-height: 60px;
+    margin-top: 10%;
+}
+.text-made{
+    font-size: 48px;
+}
+.ide-text{
+    font-size: 36px;
+}
+.arduino-ide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.button-ide{
+    background: #6b686d;
+    border: none;
+    font-size: 48px;
+    color: white;
+    margin-top: 10px;
+ }
+
