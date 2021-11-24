@@ -1,7 +1,23 @@
+
+@keyframes show{
+    0%{
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
 body{
     margin: 0;
     padding: 0;
-    background: url("background.png ");
+    background-color: black;
+    font-family: "American Typewriter";
+    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+    transition: 1s; /*Скорость перехода состояния элемента*/
+    animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    animation-delay: 0.5s; /* Задержка перед началом */
+    color:white;
 }
 header{
     background: none;
@@ -21,14 +37,19 @@ header{
     font-size: 24px;
 
 }
+
 .button-support:hover{
-    border-bottom: white     2px solid;
+    /*border-bottom: white     2px solid;*/
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .nav-bar{
     width: 30%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
 }
 .github-button{
     border:0;
@@ -42,11 +63,14 @@ header{
 
 }
 .github-button:hover{
-    border-bottom: white 2px solid;
+
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 .logo-picture{
-    height: 50px;
-    width: 50px;
+    height: 100px;
+    width: 200px;
 }
 .button-downloads{
     border:0;
@@ -60,64 +84,39 @@ header{
 
 }
 .button-downloads:hover{
-    border-bottom: white 2px solid;
+
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
-.buy{
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-top: 10%;
-    color: white;
-    line-height: 60px;
-}
-.buy-text{
+.information{
     font-size: 48px;
-    width: 600px;
+    height: 500px;
+    width: 1200px;
+    margin-left: 40vh;
 }
-.button-buy{
-    background: #6b686d;
-    border: none;
-    font-size: 48px;
-    color: white;
-    margin-top: 10px;
-}
-.link-buy{
-    text-decoration: none;
-    color: white;
-}
-.buy-picture{
-    width: 750px;
-    height: 375px;
-}
-.self-made{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    line-height: 60px;
-    margin-top: 10%;
-}
-.text-made{
-    font-size: 48px;
-}
-.ide-text{
+.button-talk{
+    height: 100px;
+    width: 300px;
     font-size: 36px;
-}
-.arduino-ide{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.button-ide{
-    background: #6b686d;
+    border-radius: 20px;
+    background-color: white;
     border: none;
-    font-size: 48px;
-    color: white;
-    margin-top: 10px;
- }
+    margin-left: 40vh;
+}
+.button-talk:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+.link-talk{
+    text-decoration: none;
+    color:black;
+
+}
+
+
+
+
+
 
